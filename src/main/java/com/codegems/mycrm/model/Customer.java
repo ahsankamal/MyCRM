@@ -15,7 +15,7 @@ import javax.validation.constraints.Size;
 public @Data class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @NotNull
     @Size(min = 4, max=45)
@@ -30,7 +30,7 @@ public @Data class Customer {
     private String email;
 
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
